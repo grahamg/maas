@@ -1,4 +1,4 @@
-# MAAS
+# MCAAS
 
 *November 2023 - v0.0.1*
 
@@ -6,7 +6,7 @@
 
 MAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available.
 
-Please see https://docs.mcrib.api for API documentation and examples.
+Please see https://docs.mcaas.io for API documentation and examples.
 
 # Installation
 
@@ -22,22 +22,22 @@ Please see https://docs.mcrib.api for API documentation and examples.
 
 # Docker
 
-	docker build -t maas:1 .
-    docker run -v $(pwd):/usr/src/app -p 9000:9000 maas:1
+	docker build -t mcaas:1 .
+    docker run -v $(pwd):/usr/src/app -p 9000:9000 mcaas:1
 
 # Clients
 
 API clients are available in a number of languages:
 
-| Language | Name           | Info                                           |
-|:---------|:---------------|:-----------------------------------------------|
-| JS/Node  | `maas-client` | https://www.npmjs.org/package/maas-client       |
+| Language | Name            | Info                                             |
+|:---------|:----------------|:-------------------------------------------------|
+| JS/Node  | `mcaas-client ` | https://www.npmjs.org/package/mcaas-client       |
 
 # GUI Clients
 
-| Platform          | Info                                                    |
-|:------------------|:--------------------------------------------------------|
-| Web               | https://github.com/grahamg/maas                         |
+| Platform          | Info                                                     |
+|:------------------|:---------------------------------------------------------|
+| Web               | https://github.com/grahamg/mcaas                         |
 
 # Contributing
 
