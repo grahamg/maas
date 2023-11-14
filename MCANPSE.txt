@@ -32,7 +32,7 @@ Abstract
       4xx   Client Error
       5xx   Server Error
       6xx   I'm a McRib sandwich, please eat me asap.
-      7xx   McRib sandwich transport deliery error.
+      7xx   McRib sandwich transport delivery error.
 
    Increasingly, home and consumer devices are being connected to the
    Internet and the need has arisen for a more colloquial and holistic
