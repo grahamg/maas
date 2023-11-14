@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>McRib Availability As A Service (MCAAAS)</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
+  crossorigin="anonymous">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mcaaas">
+  <meta name="og:url" content="https://mcaaas.io">
+  <meta name="og:title" content="MCAAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available. ">
+  <meta name="og:description" content="">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 cell">
+        <h1 class="h1">MCAAAS</h1>
+        <h2 class="h2">McRib Availibility As A Service</h2>
+        <p class="p"><em>v0.0.1</em></p>
+      </div>
+
+        <article class="page-content">
+            <h2 id="introduction">Introduction</h2>
+            <p>MCAAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available.</p>
+      
+            <h2 id="api">API</h2>
+      
+            <h3 id="contentnegotiation">Content Negotiation</h3>
+      
+            <p>MCAAAS will respond to the following 'Accept:' values with appropriate content</p>
+      
+            <ul>
+              <li>text/plain - Content will be returned as a plain string.</li>
+              <li>
+                application/json - Content will be returned as a JSON object <code>{ message: 'message', subtitle: 'subtitle' }</code>
+                <ul>
+                  <li>Supports jsonp by including <code>?callback=?</code></li>
+                </ul>
+              </li>
+              <li>text/html - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.</li>
+              <li>application/xml - Content will be returned as a XML document.</li>
+            </ul>
+      
+            <h3 id="operations">Operations</h3>
+      
+            <table class="table" id="routes">
+                <tr>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>/version</td>
+                    <td>Will return content with the current MCAAAS version number.</td>
+                </tr>
+      
+                <tr>
+                    <td>/operations</td>
+                    <td>Will return a JSON list of operations with names and fields. <em>Note: JSON Only</em></td>
+                </tr>
+            </table>
+      
+            <h3 id="filters">Filters</h3>
+      
+            <p>Filters are optional output modifiers, and are specified by adding the filter name as query to the HTTP request, e.g. <a href="https://mcaaas.io/is-available?tts">https://mcaaas.io/is-available?<em>tts</em></a>.</p>
+      
+            <p><strong>Caveat: </strong>All filters internally call the stated external services, and as such the latency and availability of API calls using these features cannot be guaranteed.</p> 
+      
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>tts</td>
+                    <td>Integration with the TTSReader service. Please see <a href="https://ttsreader.com/">ttsreader.com</a> for details.</td>
+                </tr>
+                <tr id='i18n'>
+                    <td>i18n</td>
+                    <td>Translation provided by <a href="http://mymemory.translated.net">mymemory.translated.net</a>. Specifying ?i18n on its own will attempt to detect your browser language, or you can specify the language to translate to using the ISO 639-1 language code, i.e. ?i18n=es</td>
+                </tr>
+            </table>
+      
+            <p>Filters can be used in combinations, e.g. <a href="http://mcaaas.io/is-available&amp;i18n=de">https://foaas.io/is-available?<em>tts&amp;i18n=fr</em></a></p>
+      
+            <h2 id="roadmap">Roadmap</h2>
+      
+            <p>FOAAS will be extended to include the following functionality:</p>
+      
+            <ul>
+            <li>Random fun facts (or interesting fact of the day) about the McRib, without having to specify the operation.</li>
+            </ul>
+      
+            <p>All contributions are very welcome.</p>
+      
+            <p><a href="https://twitter.com/mcaaas">Follow @mcaaas on twitter!</a></p>
+            <p><a href="https://github.com/grahamg/mcaaas">Fork me on github</a></p>
+      
+            <p>Created and maintained by <a href="https://www.github.com/grahamg">@grahamg</a></p>
+      
+        </article>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $(document).foundation();
+    });
+  </script>
+ </body>
+</html>
