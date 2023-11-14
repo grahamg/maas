@@ -22,7 +22,7 @@ Please see https://mcaaas.io for API documentation and examples.
 
 # Docker
 
-	docker build -t mcaas:1 .
+	docker build -t mcaaas:1 .
     docker run -v $(pwd):/usr/src/app -p 9000:9000 mcaaas:1
 
 # Clients
@@ -43,7 +43,7 @@ API clients are available in a number of languages:
 
 ## Adding new operations
 
-To add a new MAAS operation:
+To add a new MCAAAS operation:
 
 1. Fork into your account
 2. Branch into a feature branch `feature/your_operation`
