@@ -6,7 +6,7 @@
 
 MCAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available.
 
-Please see https://docs.mcaas.io for API documentation and examples.
+Please see https://mcaas.io for API documentation and examples.
 
 # Installation
 
