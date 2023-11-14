@@ -1,0 +1,41 @@
+Network Working Group                                     G. Greenfield
+Request for Comments: DRAFT03299                       14 November 2023
+Category: Informational
+
+
+ McRib Availability Notification Protocol Sarcasm Extension (MCANPSE/1.0)
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.
+
+Copyright Notice
+
+   Copyright (C) MCAAS (2023).  All Rights Reserved.
+
+Abstract
+
+   This document describes MCANPSE, a HTTP protocol extension to
+   allow a webserver to express on the availability of the fast
+   food sandwich in question.
+
+1. Rationale and Scope
+
+   The standard HTTP status codes are designated ranges designed
+   around specific response categories, broadly as follows:
+
+      1xx   Intermediate Responses, Protocol control
+      2xx   OK
+      3xx   Redirect
+      4xx   Client Error
+      5xx   Server Error
+      6xx   I'm a McRib sandwich, please eat me asap.
+      7xx   McRib sandwich transport deliery error.
+
+   Increasingly, home and consumer devices are being connected to the
+   Internet and the need has arisen for a more colloquial and holistic
+   approach to the dry and technical responses we have used previously.
+   We propose that the protocol be extended to include further ranges of
+   codes to express higher order concepts, in this example, sarcasm.
