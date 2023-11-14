@@ -4,7 +4,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-MAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available.
+MCAAS (McRib Availability As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people if the popular fast food sandwich is currently available.
 
 Please see https://docs.mcaas.io for API documentation and examples.
 
